@@ -13,11 +13,17 @@
     <link rel="stylesheet" type="text/css" href="./css/all.min.css">
 
     <!-- Magnific Popup css file -->
-    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+    <!-- OwlCarousel css file -->
+    <link rel="stylesheet" type="text/css" href="./vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendor/owlcarousel/owl.theme.default.min.css">
 
     <!-- custom css file -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
+    <!-- responsive css file -->
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
 </head>
 <body>
     <!--============================Start Header Area============================-->
@@ -25,7 +31,7 @@
         <div class="main-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+              <h1 class="navbar-brand">NGHIEM DOAN</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -36,22 +42,15 @@
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">About</a>
+                    <a class="nav-link" aria-current="page" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Services</a>
+                    <a class="nav-link" aria-current="page" href="#services">Certifications</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Page</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Blog</a>
+                    <a class="nav-link" aria-current="page" href="#projects">Projects</a>
                   </li>
                 </ul>
-                <!--<form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>-->
               </div>
             </div>
           </nav>
@@ -71,8 +70,7 @@
               <h4 class="title-text text-uppercase">Power Platform Solution Architect</h4>
               <div class="site-buttons">
                 <div class="d-flex flex-row flex-wrap">
-                  <button type="button" class="btn button primary-button mr-4 text-uppercase">Hire me</button>
-                  <button type="button" class="btn button secondary-button text-uppercase">Get CV</button>
+                  <button type="button" class="btn button primary-button mr-4 text-uppercase" onclick="location.href='mailto:nghiem.doan@outlook.com?&subject=Connect with Nghiem Doan';">Contact Me</button>
                 </div>
               </div>
             </div>
@@ -85,7 +83,7 @@
       <!--============================End Banner Area============================-->
 
       <!--============================Start About Area============================-->
-      <section class="about-area">
+      <section class="about-area" id="about">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6 col-md-12">
@@ -99,13 +97,13 @@
               </h2>
               <div class="paragraph py-4 w-75">
                 <p class="para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni id libero a ullam, animi ducimus ratione alias saepe fuga earum rem, sint recusandae reprehenderit placeat odio. Tenetur, repellendus optio.
+                  I am a tech savvy who has playing multiple roles in Software Development Team. I find myself attractive to coding and developing new things. Having a strong sense of UX design and using background as a Business Analyst, I have created technical solutions that match clients' business process and needs. My development style and attention to detail has proven to create a positive experience for users.
                 </p>
                 <p class="para">
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  My Personal Mission is to serve as a leader, to live a balanced life, and to apply ethical principles to make a significant difference.
                 </p>
               </div>
-              <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+              <a href="./file/NghiemDoan-Resume.pdf" download="nghiemdoan.pdf"><button type="button" class="btn button primary-button text-uppercase">Download CV</button></a>
             </div>
           </div>
         </div>
@@ -120,47 +118,74 @@
               <div class="first-row row">
                 <div class="col-lg-4 col-md-6 col-sm6">
                   <div class="single-brand">
-                    <img src="./img/brands/logo1.png" alt="Brand-1">
+                    <img src="./img/brands/PowerApps_scalable.svg" alt="PowerApps">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Power Apps</h7>
+                    </div> 
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm6">
+                  <div class="single-brand">
+                    <img src="./img/brands/PowerAutomate_scalable.svg" alt="PowerAutomate">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Power Automate</h7>
+                    </div> 
                   </div> 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm6">
                   <div class="single-brand">
-                    <img src="./img/brands/logo2.png" alt="Brand-2">
+                    <img src="./img/brands/PowerVirtualAgents_scalable.svg" alt="PowerVirtualAgents">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Power Virtual Agents</h7>
+                    </div> 
                   </div> 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm6">
                   <div class="single-brand">
-                    <img src="./img/brands/logo3.png" alt="Brand-3">
+                    <img src="./img/brands/Dataverse_scalable.svg" alt="Dataverse">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Dataverse</h7>
+                    </div> 
                   </div> 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm6">
                   <div class="single-brand">
-                    <img src="./img/brands/logo4.png" alt="Brand-4">
+                    <img src="./img/brands/CustomerInsights_color.svg" alt="CustomerInsights">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Customer Insights</h7>
+                    </div> 
                   </div> 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm6">
                   <div class="single-brand">
-                    <img src="./img/brands/logo5.png" alt="Brand-5">
+                    <img src="./img/brands/PowerBI_scalable.svg" alt="PowerBI">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Power BI</h7>
+                    </div> 
                   </div> 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm6">
                   <div class="single-brand">
-                    <img src="./img/brands/logo6.png" alt="Brand-6">
+                    <img src="./img/brands/Sales_color.svg" alt="Sales">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Dynamics 365 Sales</h7>
+                    </div> 
                   </div> 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm6">
                   <div class="single-brand">
-                    <img src="./img/brands/logo7.png" alt="Brand-7">
+                    <img src="./img/brands/Customer_Service_color.svg" alt="CustomerService">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Dynamics 365 Services</h7>
+                    </div> 
                   </div> 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm6">
                   <div class="single-brand">
-                    <img src="./img/brands/logo8.png" alt="Brand-8">
-                  </div> 
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo9.png" alt="Brand-9">
+                    <img src="./img/brands/ProjectOperations_color.svg" alt="ProjectOperations">
+                    <div class="card-body text-center">
+                      <h7 class="card-title text-uppercase font-roboto">Dynamics 365 Operations</h7>
+                    </div> 
                   </div> 
                 </div>
               </div>
@@ -168,7 +193,7 @@
             <div class="col-xl-6 col-lg-12 col-md-12">
               <div class="experience-area">
                 <div class="d-flex flex-row years-area">
-                  <h2 class="p-3 years">10</h2>
+                  <h2 class="p-3 years">8</h2>
                   <h2>
                     <span>Years</span>
                     <span>Experience</span>
@@ -176,13 +201,13 @@
                   </h2>
                 </div>
                 <div class="d-flex flex-row flex-wrap call-area">
-                  <span><i class="fas fa-phone-alt fa-3x"></i></span>
+                  <span><i class="fas fa-envelope fa-3x"></i></span>
                   <div class="call-now">
-                    <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
-                    <span class="font-roboto py-2">+1 612 516 2606</span>
+                    <a href="mailto:nghiem.doan@outlook.com?&subject=Connect with Nghiem Doan" class="text-uppercase h4 font-roboto">Contact me</a>
+                    <span class="font-roboto py-2">nghiem.doan@outlook.com</span>
                   </div>
                 </div>
-                <div class="bg-panel"></div>
+                <!-- <div class="bg-panel"></div> -->
               </div>
             </div>
           </div>
@@ -192,14 +217,11 @@
       <!--============================End Brand Area============================-->
 
       <!--============================Start Services Area============================-->
-      <section class="services-area">
+      <section class="services-area" id="services">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h1 class="text-uppercase services-title">Services Offers</h1>
-              <p class="para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea, delectus a labore autem, architecto dignissimos adipisci ut itaque numquam ad consectetur perspiciatis nam tenetur, eveniet accusantium cumque reiciendis asperiores?
-              </p>
+              <h1 class="text-uppercase services-title">Certfications & Recognitions</h1>
             </div>
           </div>
           <div class="container services-list">
@@ -207,14 +229,14 @@
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="services">
                   <div class="services-img text-center py-4">
-                    <img src="./img/services/s1.png" alt="Service-1">
+                    <a href="https://www.credly.com/badges/f257c9e8-f24a-4964-98be-a01a631e95b2" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/services/ftrsa_logo_2021.png" alt="Service-1">
+                    </a>
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-roboto">WP Developer</h5>
+                    <h5 class="card-title text-uppercase font-roboto">2021 FastTrack Recognized Solution Architect - Power Apps</h5>
                     <p class="card-text text-secondary">
-                      Some quick example text to build on the cvard
-                      title and make up
-                      the bulk of the card's' content.
+                      Issued by Microsoft FastTrack
                     </p>
                   </div>
                 </div>
@@ -222,14 +244,14 @@
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="services">
                   <div class="services-img text-center py-4">
-                    <img src="./img/services/s2.png" alt="Service-2">
+                    <a href="https://www.credly.com/badges/f257c9e8-f24a-4964-98be-a01a631e95b2" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/services/ftrsa_logo_2020.png" alt="Service-2">
+                    </a>
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-roboto">UI/UX Design</h5>
+                      <h5 class="card-title text-uppercase font-roboto">2020 FastTrack Recognized Solution Architect - Power Apps</h5>
                     <p class="card-text text-secondary">
-                      Some quick example text to build on the cvard
-                      title and make up
-                      the bulk of the card's' content.
+                      Issued by Microsoft FastTrack
                     </p>
                   </div>
                 </div>
@@ -237,14 +259,14 @@
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="services">
                   <div class="services-img text-center py-4">
-                    <img src="./img/services/s3.png" alt="Service-3">
+                    <a href="https://www.credly.com/badges/8e94012c-f332-4848-adb7-6cb03a94cbf7" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/services/CERT-Expert-Dynamics365-Power-Platform-Solution-Architect.png" alt="Service-3">
+                    </a>
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-roboto">Web Design</h5>
+                    <h5 class="card-title text-uppercase font-roboto">Microsoft Certified: Dynamics 365 + Power Platform Solution Architect Expert</h5>
                     <p class="card-text text-secondary">
-                      Some quick example text to build on the cvard
-                      title and make up
-                      the bulk of the card's' content.
+                      Issued by Microsoft
                     </p>
                   </div>
                 </div>
@@ -252,14 +274,14 @@
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="services">
                   <div class="services-img text-center py-4">
-                    <img src="./img/services/s4.png" alt="Service-4">
+                    <a href="https://www.credly.com/badges/b28d6ead-1d7d-45ba-9882-353952b87e14" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/services/CERT-Associate-Dynamics365-Power-Apps-Developer.png" alt="Service-4">
+                    </a>
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-roboto">SEO Optimize</h5>
+                    <h5 class="card-title text-uppercase font-roboto">Microsoft Certified: Power Apps + Dynamics 365 Developer Associate</h5>
                     <p class="card-text text-secondary">
-                      Some quick example text to build on the cvard
-                      title and make up
-                      the bulk of the card's' content.
+                      Issued by Microsoft
                     </p>
                   </div>
                 </div>
@@ -272,11 +294,11 @@
 
       <!--  ======================= Project Area =============================  -->
 
-      <section class="project-area">
+      <section class="project-area" id="projects">
         <div class="container">
             <div class="project-title pb-5">
-                <h1 class="text-uppercase title-h1">Recently Done Project</h1>
-                <h1 class="text-uppercase title-h1">Quality Work</h1>
+                <h1 class="text-uppercase title-h1">Recently Done Public</h1>
+                <h1 class="text-uppercase title-h1">or Personal Projects</h1>
             </div>
 
             <div class="button-group">
@@ -288,120 +310,82 @@
             </div>
 
             <div class="row grid">
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item latest">
                     <div class="our-project">
                         <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p1.jpg">
-                                <img src="./img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
-                            </a>
+                            <a class="test-popup-link" href="./img/portfolio/ResponsiveAppDemoV1.png">
+                                <img src="./img/portfolio/ResponsiveAppDemoV1.png" alt="Responsive Contact App" class="img-fluid">
+                              </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Minimul Desing</h4>
-                            <span class="text-secondary">Latest, Portfolio</span>
+                            <h4 class="text-uppercase">Contact App</h4>
+                            <span class="text-secondary">This is a demo app to demonstrate how to use Containers to build a single responsive app works perfectly across all devices.</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item popular">
                     <div class="our-project">
                         <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p2.jpg">
-                                <img src="./img/portfolio/p2.jpg" alt="portfolio-2" class="img-fluid">
+                            <a class="test-popup-link" href="./img/portfolio/CustomerInsights-PocketDemoV3.png">
+                                <img src="./img/portfolio/CustomerInsights-PocketDemoV3.png" alt="portfolio-2" class="img-fluid">
                             </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Paint Wall</h4>
-                            <span class="text-secondary">Popular, Portfolio</span>
+                            <h4 class="text-uppercase">Pocket Demo</h4>
+                            <span class="text-secondary">Pocket demo apps put unified customer data and actionable insights from Customer Insights into the hands of business users so they can build meaningful and personal relationships with customers.
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item popular">
                     <div class="our-project">
                         <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p3.jpg">
-                                <img src="./img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
+                            <a class="test-popup-link" href="./img/portfolio/RouteOptimizationApps.png">
+                                <img src="./img/portfolio/RouteOptimizationApps.png" alt="portfolio-3" class="img-fluid">
                             </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Female light</h4>
-                            <span class="text-secondary">Popular, Portfolio</span>
+                            <h4 class="text-uppercase">Route Optimization</h4>
+                            <span class="text-secondary">Using Google Maps API to display optimized route among multiple addresses</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item upcoming">
                     <div class="our-project">
                         <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p4.jpg">
-                                <img src="./img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
+                            <a class="test-popup-link" href="./img/portfolio/SocialListeningApp.png">
+                                <img src="./img/portfolio/SocialListeningApp.png" alt="portfolio-4" class="img-fluid">
                             </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Fourth Air</h4>
-                            <span class="text-secondary">Upcoming, Portfolio</span>
+                            <h4 class="text-uppercase">Social Listing App</h4>
+                            <span class="text-secondary">Track and monitor list of hashtags from Twitter</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item upcoming">
                     <div class="our-project">
                         <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p5.jpg">
-                                <img src="./img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid">
+                            <a class="test-popup-link" href="./img/portfolio/PlantDetectionApp.png">
+                                <img src="./img/portfolio/PlantDetectionApp.png" alt="portfolio-5" class="img-fluid">
                             </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Muliple fown</h4>
-                            <span class="text-secondary">Upcoming, Portfolio</span>
+                            <h4 class="text-uppercase">Plant Detection App</h4>
+                            <span class="text-secondary">Using PlantId API to detect plant based on a photo and provide guidance to take care the plant.</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                <div class="col-lg-6 col-md-6 col-sm-12 element-item following">
                     <div class="our-project">
                         <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p6.jpg">
-                                <img src="./img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
+                            <a class="test-popup-link" href="./img/portfolio/FlappyBeanV2.png">
+                                <img src="./img/portfolio/FlappyBeanV2.png" alt="portfolio-6" class="img-fluid">
                             </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Together sign</h4>
-                            <span class="text-secondary">Following, Portfolio</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p7.jpg">
-                                <img src="./img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Green Heaven</h4>
-                            <span class="text-secondary">Following, Portfolio</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p8.jpg">
-                                <img src="./img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Fly Male</h4>
-                            <span class="text-secondary">Following, Portfolio</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p9.jpg">
-                                <img src="./img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Camera Lens</h4>
-                            <span class="text-secondary">Upcoming, Portfolio</span>
+                            <h4 class="text-uppercase">Flappy Bean</h4>
+                            <span class="text-secondary">Do you still remember the famous Flappy Bird Game? This Flappy Bean version demonstrates how to create a simple game in PowerApps.</span>
                         </div>
                     </div>
                 </div>
@@ -410,11 +394,36 @@
     </section>
 
     <!--  ======================= End Project Area =============================  -->
-
-
-
     </main>
     <!--============================End Main Area============================-->
+
+    <footer class="footer-area">
+      <div class="container">
+          <div class="">
+              <div class="site-logo text-center py-4">
+                <h1 class="navbar-brand">NGHIEM DOAN</h1>
+              </div>
+              <div class="social text-center">
+                  <h5 class="text-uppercase">Follow me</h5>
+                  <a href="https://www.linkedin.com/in/nghiemdoan/"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/hoanghiem"><i class="fab fa-github"></i></a>
+                  <a href="https://twitter.com/nghiemdoan_mn"><i class="fab fa-twitter"></i></a>
+              </div>
+              <div class="copyrights text-center">
+                  <p class="para">
+                      Copyright ©2021 All rights reserved | Made by
+                      <a href="#"><span style="color: var(--primary-color);">Nghiem Doan</span></a>
+                  </p>
+                  <p class="para">
+                    <a href="https://www.vecteezy.com/free-vector/web">Web Vectors by Vecteezy</a>
+                  </p>
+                  <p class="para">
+                    <a href='https://www.freepik.com/vectors/computer'>Computer vector created by pch.vector - www.freepik.com</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="./js/jquery-3.6.0.min.js"></script>
@@ -422,8 +431,10 @@
     <script src="./js/bootstrap.min.js"></script>
     <!-- Isotope js library-->
     <script src="./vendor/isotope/isotope.min.js"></script>
-    <!-- Custom js library-->
-    <script src="./js/main.js"></script>
+    <!-- Magnific popup script library-->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <!-- OwlCarousel script library-->
+    <script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Custom js library-->
     <script src="./js/main.js"></script>
 </body>

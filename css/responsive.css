@@ -12,7 +12,7 @@
     }
 
     .site-main .site-banner .site-title h1{
-        font-size: 41px;
+        font-size: 31px;
     }
 
     .site-main .subscribe-us-area .subscribe form .input-textbox input{
@@ -26,10 +26,15 @@
     .site-main .project-area .grid .our-project > .title h4{
         font-size: 20px;
     }
+
+    .site-main .brand-area .experience-area{
+        min-width: 320px;
+        margin-left: 10px;
+    }
 }
 
 
-/* if the viewport is equal to 340px or less than that */ 
+/* if the viewport is equal to 792px or less than that */ 
 @media only screen and (max-width: 792px){
     .site-main .about-area .about-title h2 > span{
         font-size: 31px;
@@ -39,6 +44,11 @@
     .site-main .brand-area .experience-area .years-area{
         padding-left: 1%;
         width: 49%;
+    }
+
+    .site-main .brand-area .experience-area{
+        min-width: 320px;
+        margin-left: 5px;
     }
 
     .site-main .brand-area .experience-area .bg-panel{

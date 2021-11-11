@@ -14,7 +14,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    margin-right: 0;
+    margin-left: 2rem;
 }
 
 .header_area .main-menu .navbar{

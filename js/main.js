@@ -11,6 +11,7 @@ $(document).ready(function(){
         return false;
     })
 
+    //Click on All button to reset the grid display
     $('.project-area .button-group #btn1').trigger('click');
     
     //Magnific Popup
@@ -49,4 +50,4 @@ $(document).ready(function(){
 
     navBarFixed();
 
-})
+})(jQuery);

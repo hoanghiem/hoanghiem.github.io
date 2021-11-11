@@ -13,6 +13,7 @@ $(document).ready(function(){
 
     //Click on All button to reset the grid display
     $('.project-area .button-group #btn-all').trigger('click');
+    $('.project-area .button-group #btn-all').trigger('click');
     
     //Magnific Popup
     $('.project-area .grid .test-popup-link').magnificPopup({

@@ -270,11 +270,6 @@
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
-.site-main .project-area .grid .our-project img {
-    image-rendering:auto;
-}
-
-
 /* end Project Area */
 
 /* start About Me Area */ 
